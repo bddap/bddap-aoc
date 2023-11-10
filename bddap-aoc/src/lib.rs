@@ -9,6 +9,7 @@ use linkme::distributed_slice;
 pub use bddap_aoc_macros::challenge;
 pub use challenge::Challenge;
 pub use input_getter::Getter;
+pub use linkme;
 
 #[distributed_slice]
 pub static CHALLENGES: [Challenge] = [..];

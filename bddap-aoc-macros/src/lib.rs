@@ -38,7 +38,7 @@ pub fn challenge(attr: TokenStream, item: TokenStream) -> TokenStream {
 
     let module = quote! {
         mod #funcname {
-            #[::linkme::distributed_slice(::bddap_aoc::CHALLENGES)]
+            #[::bddap_aoc::linkme::distributed_slice(::bddap_aoc::CHALLENGES)]
             static __: ::bddap_aoc::Challenge = {
                 fn #funcname(a: &str) -> String {
                     super::#funcname(a).to_string()
