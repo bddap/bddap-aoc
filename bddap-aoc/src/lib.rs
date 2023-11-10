@@ -66,8 +66,8 @@ pub fn run_default() {
 
     for challenge in todos {
         println!(
-            "year {} day {} part {}",
-            challenge.year, challenge.day, challenge.part
+            "year {} day {} part {} - {}",
+            challenge.year, challenge.day, challenge.part, challenge.name
         );
         let input = match getter.get_input(challenge.year, challenge.day) {
             Ok(input) => input,

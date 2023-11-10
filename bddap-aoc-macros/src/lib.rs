@@ -45,6 +45,7 @@ pub fn challenge(attr: TokenStream, item: TokenStream) -> TokenStream {
                 }
 
                 ::bddap_aoc::Challenge {
+                    name: stringify!(#funcname),
                     year: #year,
                     day: #day,
                     part: #part,
