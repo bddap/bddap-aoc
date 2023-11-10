@@ -6,7 +6,7 @@ mod persist;
 use clap::Parser;
 use linkme::distributed_slice;
 
-pub use bddap_aoc_macros::challenge;
+pub use bddap_aoc_macros::{register, unregistered_challenge};
 pub use challenge::Challenge;
 pub use input_getter::Getter;
 pub use linkme;
