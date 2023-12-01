@@ -8,7 +8,7 @@ readme.workspace = true
 
 [dependencies]
 anyhow = "1.0.75"
-bddap-aoc-macros = { version = "0.1.0", path = "../bddap-aoc-macros" }
+bddap-aoc-macros = "0.1.0"
 chrono = "0.4.31"
 clap = { version = "4.4.7", features = ["derive"] }
 humantime = "2.1.0"
@@ -26,4 +26,3 @@ path = "examples/standard/main.rs"
 [[example]]
 name = "showcase"
 path = "examples/showcase/main.rs"
-
