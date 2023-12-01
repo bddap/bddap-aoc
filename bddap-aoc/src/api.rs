@@ -47,6 +47,11 @@ pub fn get_input(session_token: &str, year: usize, day: usize) -> Result<String,
             year, day
         ))
         .header("Cookie", format!("session={}", session_token))
+        .header(
+            // https://www.reddit.com/r/adventofcode/comments/z9dhtd/please_include_your_contact_info_in_the_useragent/
+            "User-Agent",
+            "github.com/bddap/bddap-aoc by andrew@dirksen.com",
+        )
         .send()?
         .error_for_status()?
         .text()?;
