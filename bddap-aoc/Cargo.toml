@@ -21,5 +21,9 @@ xdg = "2.5.2"
 
 [[example]]
 name = "standard"
-path = "examples/standard/bin.rs"
+path = "examples/standard/main.rs"
+
+[[example]]
+name = "showcase"
+path = "examples/showcase/main.rs"
 

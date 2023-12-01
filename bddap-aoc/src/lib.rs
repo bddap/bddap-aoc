@@ -6,9 +6,10 @@ mod persist;
 use clap::Parser;
 use linkme::distributed_slice;
 
-pub use bddap_aoc_macros::challenge;
+pub use bddap_aoc_macros::{register, unregistered_challenge};
 pub use challenge::Challenge;
 pub use input_getter::Getter;
+pub use linkme;
 
 #[distributed_slice]
 pub static CHALLENGES: [Challenge] = [..];
@@ -66,8 +67,8 @@ pub fn run_default() {
 
     for challenge in todos {
         println!(
-            "year {} day {} part {}",
-            challenge.year, challenge.day, challenge.part
+            "year {} day {} part {} - {}",
+            challenge.year, challenge.day, challenge.part, challenge.name
         );
         let input = match getter.get_input(challenge.year, challenge.day) {
             Ok(input) => input,
