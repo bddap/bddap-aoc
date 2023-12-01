@@ -1,14 +1,11 @@
 [workspace]
-members = [
-    "bddap-aoc",
-    "bddap-aoc-macros",
-]
+members = ["bddap-aoc", "bddap-aoc-macros"]
 resolver = "2"
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Andrew Dirksen <andrew@dirksen.com>"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
 readme = "README.md"
-
+repository = "https://github.com/bddap/bddap-aoc"

@@ -1,5 +1,8 @@
 # Bddap's Advent of Code Runner
 
+![Crates.io](https://img.shields.io/crates/l/bddap-aoc)
+![docs.rs](https://img.shields.io/docsrs/bddap-aoc)
+
 Organize and run your rust advent of code solutions.
 
 ## Usage

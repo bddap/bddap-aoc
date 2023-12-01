@@ -6,10 +6,12 @@ license.workspace = true
 edition.workspace = true
 readme.workspace = true
 description = "bddap's rust Advent Of Code solution runner"
+repository.workspace = true
+keywords = ["aoc"]
 
 [dependencies]
 anyhow = "1.0.75"
-bddap-aoc-macros = "0.1.0"
+bddap-aoc-macros = "0.1.1"
 chrono = "0.4.31"
 clap = { version = "4.4.7", features = ["derive"] }
 humantime = "2.1.0"
