@@ -4,7 +4,7 @@ version.workspace = true
 authors.workspace = true
 license.workspace = true
 edition.workspace = true
-readme.workspace = true
+description = "Procedural macros used by the bddap-aoc crate."
 
 [lib]
 proc-macro = true
