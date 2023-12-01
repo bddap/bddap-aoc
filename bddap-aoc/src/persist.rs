@@ -99,8 +99,8 @@ fn cache_dir() -> anyhow::Result<std::path::PathBuf> {
 /// Enter session cookie from https://adventofcode.com/ : <cookie>
 /// Session cookie has been saved to <path>/.config/aoc/config.toml
 pub fn login() -> Result<(), anyhow::Error> {
-    let session_token =
-        rpassword::prompt_password("Enter session cookie from https://adventofcode.com/ : ")?;
+    println!("{}", include_str!("how_to_find_session_token.txt"));
+    let session_token = rpassword::prompt_password("Enter session cookie: ")?;
     let mut config = Config::load()?;
     let default_profile = DEFAULT_PROFILE.parse().unwrap();
     let profile = config

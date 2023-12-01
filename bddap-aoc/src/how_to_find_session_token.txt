@@ -1,0 +1,30 @@
+Advent of Code Session Token Retrieval Instructions
+---------------------------------------------------
+
+1. Open Advent of Code Website:
+   - Go to https://adventofcode.com/ in your web browser.
+
+2. Log In:
+   - Log in to your Advent of Code account. Create one if you don't have an account.
+
+3. Open Developer Tools:
+   - Right-click on the webpage and select 'Inspect' or 'Developer Tools'.
+   - Alternatively, use the keyboard shortcut (often F12 or Ctrl+Shift+I).
+
+4. Go to the 'Application' Tab:
+   - In the developer tools, find and click on the 'Application' tab.
+
+5. Find Cookies:
+   - In the 'Application' tab, look for 'Cookies' on the left-hand side.
+   - Click on 'Cookies', then select the Advent of Code website.
+
+6. Locate the Session Token:
+   - Find a cookie named `session`.
+   - The value of this cookie is your session token.
+
+7. Copy the Token:
+   - Click on the `session` cookie to reveal its value.
+   - Copy the entire value of the session token.
+
+Note: Your session token is sensitive information. Keep it private like a password.
+      The process may vary slightly depending on the browser.
