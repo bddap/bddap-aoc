@@ -1,44 +1,27 @@
-# Bddap Advent of Code Runner
+# Bddap's Advent of Code Runner
 
 Organize and run your rust advent of code solutions.
 
 ## Usage
 
-src/year2015day1part1.rs
-
 ```rust
-#[bddap_aoc::challenge(2015, 1, 1)]
-fn run(_inp: &str) -> String {
-	42.to_string()
+#[bddap_aoc::register(2015, 1, 1)]
+fn runa(_inp: &str) -> String {
+    42.to_string()
 }
-```
 
-src/year2015day1part3.rs
-
-```rust
-#[bddap_aoc::challenge(2015, 1, 2)]
-fn run(_inp: &str) -> String {
-	"Solution!".to_string()
+#[bddap_aoc::register(2015, 1, 2)]
+fn runb(_inp: &str) -> String {
+    "Solution!".to_string()
 }
-```
 
-src/year3243day2part1.rs
-
-```rust
-#[bddap_aoc::challenge(3243, 2, 1)]
-fn run(_inp: &str) -> String {
-	"Futrure solution!".to_string()
+#[bddap_aoc::register(3243, 2, 1)]
+fn runc(_inp: &str) -> String {
+    "Future solution!".to_string()
 }
-```
-
-src/main.rs
-
-```rust
-mod day1part1;
-mod day1part2;
 
 fn main() {
-	bddap_aoc::default_run();
+    bddap_aoc::run_default();
 }
 ```
 
