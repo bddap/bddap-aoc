@@ -10,7 +10,7 @@ fn runb(_inp: &str) -> String {
 
 #[bddap_aoc::challenge(3243, 2, 1)]
 fn runc(_inp: &str) -> String {
-    "Futrure solution!".to_string()
+    "Future solution!".to_string()
 }
 
 fn main() {
