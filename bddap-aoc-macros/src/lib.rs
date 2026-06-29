@@ -44,10 +44,11 @@ fn as_challege_struct(args: Args, func: syn::ItemFn) -> syn::ExprStruct {
             part: #part,
             run: {
                 #func
-                fn run(input: &str) -> String {
+                // Hidden name so it can't collide with a user fn named `run`.
+                fn __bddap_aoc_run(input: &str) -> String {
                     ::std::string::ToString::to_string(& #funcname ( input ))
                 }
-                run
+                __bddap_aoc_run
             },
         }
     }
